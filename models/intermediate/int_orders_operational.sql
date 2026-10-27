@@ -8,8 +8,8 @@ orders_marg AS (
     )
 
     SELECT 
-    orders_marg.orders_id, 
-    orders_marg.date_date,
+    orders_marg.orders_id AS orders_id, 
+    orders_marg.date_date AS date_date,
     (orders_marg.margin + ship.shipping_fee - ship.logcost - ship.ship_cost)  AS operasyonel_marj
     FROM orders_marg
     LEFT JOIN ship ON ship.orders_id=orders_marg.orders_id
