@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
 WITH oper AS (
     SELECT *
     FROM {{ ref('int_orders_operational') }}
