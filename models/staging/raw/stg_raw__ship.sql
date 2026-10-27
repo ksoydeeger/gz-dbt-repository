@@ -21,8 +21,3 @@ renamed as (
 select * from renamed
 
 
-SELECT
-    shipping_fee,
-    shipping_fee_1
-FROM {{ source('raw', 'ship') }}
-WHERE shipping_fee <> shipping_fee_1
