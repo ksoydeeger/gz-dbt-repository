@@ -9,7 +9,7 @@ sources:
       - name: sales
         identifier: raw_gz_sales
         description: "Ham satış verileri"
-        loaded_at_field: "CAST(date_date AS TIMESTAMP)"
+        loaded_at_field: date_date
         freshness:
           warn_after:
             count: 90
