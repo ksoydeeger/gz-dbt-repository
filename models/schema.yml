@@ -91,3 +91,18 @@ models:
         description: "Reklam kampanyasının adı"
       - name: ads_cost
         description: "Reklam maliyeti (FLOAT64)"
+
+  - name: stg_raw__bing
+    columns:
+      - name: campaign_name
+      - name: ads_cost
+
+  - name: stg_raw__criteo
+    columns:
+      - name: campaign_name
+      - name: ads_cost
+
+  - name: stg_raw__facebook
+    columns:
+      - name: campaign_name
+      - name: ads_cost
