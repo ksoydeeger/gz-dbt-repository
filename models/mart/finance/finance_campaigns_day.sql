@@ -17,7 +17,7 @@ fday AS (
 
 SELECT 
 fday.date_date AS date_date,
-fday.operational_marj-cday.ads_cost AS ads_margin,
+fday.operasyonel_marj-cday.ads_cost AS ads_margin,
 fday.average_basket AS average_basket,
 fday.operasyonel_marj AS operational_margin,
 cday.ads_cost AS ads_cost,
