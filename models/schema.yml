@@ -83,3 +83,11 @@ models:
         description: "Lojistik maliyeti"
       - name: ship_cost
         description: "Gönderim maliyeti"
+
+ - name: stg_raw__adwords
+   description: "Temizlenmiş Adwords reklam verileri"
+   columns:
+      - name: campaign_name
+        description: "Reklam kampanyasının adı"
+      - name: ads_cost
+        description: "Reklam maliyeti (FLOAT64)"
