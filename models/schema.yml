@@ -106,7 +106,7 @@ models:
     columns:
       - name: campaign_name
       - name: ads_cost
-      
+
   - name: int_campaigns
     description: "Dört reklam platformunun kampanya verilerini birleştiren ara model."
     columns:
@@ -141,4 +141,21 @@ models:
         description: "Reklam gösterim sayısı."
 
       - name: click
+        description: "Reklam tıklama sayısı."
+
+  - name: int_campaigns_vday
+    description: "Dört reklam platformunun kampanya verilerini birleştiren günlük ara model."
+    columns:
+     
+      - name: date_date
+        description: "Reklam kampanyasının tarihi."
+        tests:
+          - not_null
+      - name: ads_cost
+        description: "Reklam maliyeti."
+
+      - name: ads_impression
+        description: "Reklam gösterim sayısı."
+
+      - name: ads_clicks
         description: "Reklam tıklama sayısı."
