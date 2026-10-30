@@ -19,7 +19,7 @@ SELECT
 fday.date_date AS date_date,
 fday.operational_marj-cday.ads_cost AS ads_margin,
 fday.average_basket AS average_basket,
-fday.operational_marj AS operational_margin,
+fday.operasyonel_marj AS operational_margin,
 cday.ads_cost AS ads_cost,
 cday.ads_impression AS ads_impression,
 cday.ads_clicks AS ads_clicks,
