@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
 
 WITH fcday AS (
     SELECT *
