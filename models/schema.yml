@@ -200,3 +200,24 @@ models:
 
       - name: logcost
         description: "Günlük lojistik maliyeti."
+
+
+  - name: finance_campaigns_month
+    description: "Aylık finansal ve reklam performansı verileri."
+    columns:
+      - name: datemonth
+        description: "Verilerin ait olduğu ay."
+        tests:
+          - unique
+          - not_null
+      - name: ads_margin
+      - name: average_basket
+      - name: operational_margin
+      - name: ads_cost
+      - name: ads_impression
+      - name: ads_clicks
+      - name: quantity
+      - name: revenue
+      - name: purchase_cost
+      - name: shipping_fee
+      - name: logcost    
