@@ -159,3 +159,44 @@ models:
 
       - name: ads_clicks
         description: "Reklam tıklama sayısı."
+  - name: finance_campaigns_day
+    description: "Günlük finansal ve reklam kampanyası performans verilerini birleştiren model."
+    columns:
+      - name: date_date
+        description: "Verilerin ait olduğu tarih."
+        tests:
+          - unique
+          - not_null
+
+      - name: ads_margin
+        description: "Operasyonel marjdan reklam maliyetinin çıkarılmasıyla hesaplanan marj."
+
+      - name: average_basket
+        description: "Günlük ortalama sepet tutarı."
+
+      - name: operational_margin
+        description: "Günlük operasyonel marj."
+
+      - name: ads_cost
+        description: "Günlük reklam maliyeti."
+
+      - name: ads_impression
+        description: "Reklamların günlük gösterim sayısı."
+
+      - name: ads_clicks
+        description: "Reklamların günlük tıklanma sayısı."
+
+      - name: quantity
+        description: "Günlük satılan ürün miktarı."
+
+      - name: revenue
+        description: "Günlük toplam gelir."
+
+      - name: purchase_cost
+        description: "Günlük ürün satın alma maliyeti."
+
+      - name: shipping_fee
+        description: "Günlük kargo maliyeti."
+
+      - name: logcost
+        description: "Günlük lojistik maliyeti."
