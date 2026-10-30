@@ -106,3 +106,39 @@ models:
     columns:
       - name: campaign_name
       - name: ads_cost
+      
+  - name: int_campaigns
+    description: "Dört reklam platformunun kampanya verilerini birleştiren ara model."
+    columns:
+      - name: campaign_id
+        description: "Kampanya için benzersiz anahtar."
+        tests:
+          - unique
+          - not_null
+
+      - name: date_date
+        description: "Reklam kampanyasının tarihi."
+        tests:
+          - not_null
+
+      - name: paid_source
+        description: "Reklam platformu."
+        tests:
+          - not_null
+
+      - name: campaign_key
+        description: "Reklam kampanyasının kaynak sistemdeki anahtarı."
+        tests:
+          - not_null
+
+      - name: campaign_name
+        description: "Reklam kampanyasının adı."
+
+      - name: ads_cost
+        description: "Reklam maliyeti."
+
+      - name: impression
+        description: "Reklam gösterim sayısı."
+
+      - name: click
+        description: "Reklam tıklama sayısı."
