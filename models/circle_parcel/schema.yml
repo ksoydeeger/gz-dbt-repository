@@ -6,3 +6,4 @@ sources:
     schema: raw_data_circle
     tables:
       - name: raw_cc_parcel
+      - name: raw_cc_parcel_product
