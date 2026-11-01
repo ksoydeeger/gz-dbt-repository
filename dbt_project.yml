@@ -44,3 +44,8 @@ models:
       +materialized: table
       finance:
         +schema: finance
+
+  parcel:
+    circle:
+      +database: greenweez-crm
+      +schema: circle
