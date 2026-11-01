@@ -47,6 +47,8 @@ models:
 
     circle_parcel:
       +schema: parcel_dbt_dev
+      staging:
+        +schema: staging
 
   parcel:
     circle:
