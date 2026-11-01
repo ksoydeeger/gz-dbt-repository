@@ -45,6 +45,9 @@ models:
       finance:
         +schema: finance
 
+    circle_parcel:
+      +schema: parcel_dbt_dev
+
   parcel:
     circle:
       +database: greenweez-crm
