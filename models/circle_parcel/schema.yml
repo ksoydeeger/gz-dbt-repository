@@ -7,3 +7,12 @@ sources:
     tables:
       - name: raw_cc_parcel
       - name: raw_cc_parcel_product
+
+models:
+  - name: stg_cc_parcel
+    config:
+      schema: staging
+
+  - name: stg_cc_parcel_products
+    config:
+      schema: staging
